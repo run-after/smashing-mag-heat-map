@@ -116,6 +116,15 @@ header{
   align-items: center;
 }
 
+.scroll-top {
+  position: fixed;
+  bottom: 15px;
+  right: 20px;
+  background: rgb(240, 240, 240);
+  height: 50px;
+  width: 50px;
+}
+
 /* second row */
 .bigger {
   width: 400px;
