@@ -111,7 +111,7 @@ header{
   grid-row: 2 / -1;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 200px 585px 525px;
+  grid-template-rows: 200px 585px 525px 530px 585px;
   justify-items: center;
   align-items: center;
 }
@@ -367,4 +367,47 @@ header{
   width: 130px;
   margin-top: 40px;
   margin-left: 190px;
+}
+
+/* 5th row */
+
+.membership-ad {
+  grid-column: 1 / -1;
+  grid-row: 4 / 5;
+  background: black;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 60% 1fr;
+  grid-template-rows: 70% 1fr;
+}
+
+.text {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  background: rgb(120, 120, 120);
+  margin-top: 5%;
+  margin-left: 25%;
+  height: 80%;
+  width: 65%;
+}
+
+.image {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  background: rgb(182, 182, 182);
+  margin-top: -75px;
+  margin-left: 5%;
+  height: 300px;
+  width: 200px;
+}
+
+.button {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  background: rgb(182, 182, 182);
+  margin-top: 20px;
+  margin-left: 25%;
+  height: 60px;
+  width: 410px;
 }
