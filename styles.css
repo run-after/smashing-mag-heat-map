@@ -111,7 +111,7 @@ header{
   grid-row: 2 / -1;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 200px 585px 525px 530px 660px 660px 660px;
+  grid-template-rows: 200px 585px 525px 530px 660px 770px 660px;
   justify-items: center;
   align-items: center;
 }
@@ -569,8 +569,7 @@ header{
   height: 100%;
 }
 
-.membership-ad2 {
-  grid-column: 1 / 3;
+.membership-ad {
   grid-row: 2 / 3;
   background: black;
   height: 100%;
@@ -578,10 +577,10 @@ header{
   display: grid;
   grid-template-rows: 265px 75px 140px 180px;
   justify-items: center;
-  margin-left: 50px;
+  margin-left: 50px;  
 }
 
-.membership-ad2 .image {
+.membership-ad .image {
   grid-row: 1 / 2;
   background: white;
   width: 250px;
@@ -589,7 +588,7 @@ header{
   align-self: end;
 }
 
-.membership-ad2 .heading {
+.membership-ad .heading {
   grid-row: 2 / 3;
   background: rgb(240, 240, 240);
   width: 70%;
@@ -597,7 +596,7 @@ header{
   align-self: end;
 }
 
-.membership-ad2 .text1 {
+.membership-ad .text1 {
   grid-row: 3 / 4;
   background: rgb(120, 120, 120);
   width: 75%;
@@ -605,7 +604,7 @@ header{
   align-self: center;
 }
 
-.membership-ad2 .button {
+.membership-ad .button {
   grid-column: 1 / 2;
   grid-row: 4 / 5;
   background: rgb(182, 182, 182);
@@ -615,7 +614,7 @@ header{
   margin: 0 25px 20px 0;
 }
 
-.membership-ad2 .text2 {
+.membership-ad .text2 {
   grid-column: 1 / 2;
   grid-row: 4 / 5;
   background: rgb(50, 50, 50);
@@ -623,6 +622,10 @@ header{
   width: 30%;
   align-self: end;
   margin: 0 25px 40px 0;
+}
+
+.membership-ad2 { 
+  grid-column: 1 / 3;
 }
 
 .post4 {
@@ -675,6 +678,83 @@ header{
 .post5 .description {
   grid-row: 4 / 5;
   height: 140px;
-  width: 90%;
+  width: 75%;
   margin-top: 20px;
+}
+
+/* 8th row */
+
+.posts-row3 {
+  grid-column: 1 / -1;
+  grid-row: 7 / 8;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr) 420px;
+  grid-template-rows: 100px;
+  width: 100%;
+  height: 100%;
+}
+
+.post6 {
+  grid-column: 1 / 2;
+  grid-row: 1 / -1;
+  margin: 30px 0 0 60px;
+  height: 720px;
+}
+
+.post6 .title1 {
+  width: 90%;
+}
+
+.post6 .title2 {
+  width: 95%;
+}
+
+.post6 .author {
+  grid-row: 4 / 5;
+  align-self: center;
+  width: 135px;
+}
+
+.post6 .description {
+  grid-row: 5 / 6;
+  height: 270px;
+  width: 100%;
+  margin: 0;
+}
+
+.post7 {
+  grid-column: 2 / 3;
+  grid-row: 1 / -1;
+  margin: 30px 0 0 60px;
+  height: 720px;
+}
+
+.post7 .title1 {
+  width: 85%;
+}
+
+.post7 .title2 {
+  width: 85%;
+}
+
+.post7 .title3 {
+  width: 85%;
+}
+
+.post7 .author {
+  grid-row: 4 / 5;
+  align-self: end;
+  width: 135px;
+}
+
+.post7 .description {
+  grid-row: 5 / 6;
+  height: 270px;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.membership-ad3 {
+  grid-column: 3 / -1;
+  width: 85%;
 }
