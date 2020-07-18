@@ -111,7 +111,7 @@ header{
   grid-row: 2 / -1;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 200px 585px 525px 530px 660px 770px 660px;
+  grid-template-rows: 200px 585px 525px 530px 660px 770px 770px 280px 770px;
   justify-items: center;
   align-items: center;
 }
@@ -757,4 +757,16 @@ header{
 .membership-ad3 {
   grid-column: 3 / -1;
   width: 85%;
+}
+
+/* 9th row */
+
+.more-articles {
+  grid-column: 1 / -1;
+  grid-row: 8 / 9;
+  height: 50px;
+  width: 250px;
+  background-color: rgb(150, 150, 150);
+  justify-self: center;
+  align-self: center;
 }
