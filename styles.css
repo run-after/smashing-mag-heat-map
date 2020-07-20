@@ -112,7 +112,7 @@ header{
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 200px 585px 525px 530px 660px 770px 
-                      770px 270px 1100px 425px 1400px 600px;
+                      770px 270px 1100px 425px 1450px 350px 600px;
   justify-items: center;
   align-items: center;
 }
@@ -926,4 +926,64 @@ header{
   height: 25%;
   background: rgb(150, 150, 150);
   justify-self: center;
+}
+
+/* 13th row */
+
+.book-promo {
+  grid-column: 1 / -1;
+  grid-row: 12 / 13;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 75% 1fr;
+  grid-template-rows: 15% 15% 30% 40%;
+}
+
+.book-promo .feature {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  align-self: end;
+  margin-left: 5%;
+  height: 20px;
+  width: 25%;
+  background: rgb(182, 182, 182);
+}
+
+.book-promo .title {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  align-self: end;
+  margin-left: 5%;
+  height: 80%;
+  width: 30%;
+  background: rgb(50, 50, 50);
+}
+
+.book-promo .description {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+  align-self: end;
+  margin-left: 5%;
+  height: 60%;
+  width: 80%;
+}
+
+.book-promo .button {
+  grid-column: 1 / 2;
+  grid-row: 4 / 5;
+  align-self: center;
+  margin-left: 5%;
+  height: 70px;
+  width: 400px;
+  background: black;
+}
+
+.book-promo .image {
+  grid-column: 2 / -1;
+  grid-row: 1 / -1;
+  margin-top: -50px;
+  height: 350px;
+  width: 250px;
+  background: rgb(60, 60, 60);
 }
