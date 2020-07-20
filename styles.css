@@ -112,7 +112,7 @@ header{
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 200px 585px 525px 530px 660px 770px 
-                      770px 270px 1100px 600px;
+                      770px 270px 1100px 425px 600px;
   justify-items: center;
   align-items: center;
 }
@@ -828,4 +828,42 @@ header{
   width: 55%;
   background: rgb(240, 240, 240);
   margin-bottom: 50px;
+}
+
+/* 11th row */
+
+.weekly-person {
+  grid-column: 1 / -1;
+  grid-row: 10 / 11;
+  display: grid;
+  grid-template-columns: 23% 1fr;
+  grid-template-rows: 23% 1fr;
+  height: 100%;
+  width: 100%;
+}
+
+.weekly-person .image {
+  grid-column: 1 / 2;
+  grid-row: 1 / -1;
+  height: 50%;
+  width: 60%;
+  align-self: center;
+  justify-self: center;
+  background: rgb(80, 80, 80)
+}
+
+.weekly-person .title {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  width: 20%;
+  background: rgb(150, 150, 150)
+}
+
+.weekly-person .description {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  align-self: start;
+  width: 90%;
+  height: 40%;
+  margin-top: 40px;
 }
