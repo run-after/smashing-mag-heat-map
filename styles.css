@@ -113,7 +113,7 @@ header{
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 200px 585px 525px 530px 660px 770px 
                       770px 270px 1100px 425px 1450px 350px 
-                      700px 1000px 50px 1000px;
+                      700px 1000px 75px 675px;
   justify-items: center;
   align-items: center;
 }
@@ -1102,4 +1102,50 @@ header{
   background: rgb(60, 60, 60);
   align-self: center;
   justify-self: center;
+}
+
+/* 16th row */ 
+
+.more-guides {
+  grid-column: 1 / -1;
+  margin-bottom: 125px;
+  height: 30px;
+  width: 150px;
+  background: rgb(240, 240, 240);
+}
+
+/* footer */
+
+.footer {
+  grid-column: 1 / -1;
+  grid-row: 16 / -1;
+  background: black;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 85px 85px 55px 55px 55px 190px 1fr;
+  justify-items: center;
+  align-items: end;
+}
+
+.footer .title {
+  height: 20px;
+  width: 300px;
+  background: rgb(182, 182, 182);
+}
+
+.footer .links {
+  height: 40px;
+  width: 85%;
+  background: rgb(240, 240, 240)
+}
+
+.footer .links4 {
+  width: 17%;
+}
+
+.footer .quality {
+  height: 60%;
+  width: 25%;
+  background: rgb(60, 60, 60);
 }
